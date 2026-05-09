@@ -1,11 +1,16 @@
+import os 
+
 import mysql.connector
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # 1. Configuração da Conexão (Antigo database.py unificado aqui)
 def conectar():
     return mysql.connector.connect(
         host="localhost",
         user="root",
-        password="Dudufera.7", # Sua senha configurada
+        password=os.getenv("DB_PASSWORD"),
         database="plataforma_ensino"
     )
 
@@ -50,6 +55,10 @@ def rodar_projeto_analytics():
 
     except Exception as e:
         print(f"❌ Erro ao executar o projeto: {e}")
+        
+        
 
 if __name__ == "__main__":
     rodar_projeto_analytics()
+    
+    

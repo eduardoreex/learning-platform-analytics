@@ -1,0 +1,10 @@
+# Esconder a senha do banco
+.env
+
+# Ignorar arquivos temporários do Python
+__pycache__/
+*.py[cod]
+
+# Ignorar pastas de ambiente virtual (se você criar uma)
+venv/
+.venv/
