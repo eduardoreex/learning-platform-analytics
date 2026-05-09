@@ -41,4 +41,4 @@ def ranking_alunos_progresso():
 if __name__ == "__main__":
     print("Iniciando Sistema de Gestão de Dados...")
     relatorio_financeiro()
-    ranking_alunos_progresso(
+    ranking_alunos_progresso()
